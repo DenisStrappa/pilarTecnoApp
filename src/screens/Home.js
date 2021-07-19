@@ -18,6 +18,12 @@ const width = Dimensions.get('window').width
 
 export default class Home extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+    }
+  }
+
   _onHomePress = () => {
     Alert.alert(
       "Hola",
@@ -47,7 +53,8 @@ export default class Home extends React.Component {
               </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.button, { backgroundColor:'rgba(238, 0, 238, 0.5)' }]}>
+            <TouchableOpacity style={[styles.button, { backgroundColor:'rgba(238, 0, 238, 0.5)' }]}
+              onPress={()=>this.props.navigation.navigate('Profile')}>
               <Text style={styles.text}>
                 Perfil
               </Text>
@@ -55,13 +62,16 @@ export default class Home extends React.Component {
           </View>
 
           <View style={{flexDirection:'row', }}>
-            <TouchableOpacity style={[styles.button, { backgroundColor:'rgba(255, 165, 0, 0.5)' }]}>
+            <TouchableOpacity style={[styles.button, { backgroundColor:'rgba(255, 165, 0, 0.5)' }]}
+              onPress={()=>this.props.navigation.navigate('Posts')}>
+              
               <Text style={styles.text}>
                 Posteos
               </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.button, { backgroundColor:'rgba(0, 165, 188, 0.8)' }]}>
+            <TouchableOpacity style={[styles.button, { backgroundColor:'rgba(0, 165, 188, 0.8)' }]}
+              onPress={()=>this.props.navigation.navigate('Map')}>
               <Text style={styles.text}>
                 Mapa
               </Text>
@@ -79,7 +89,7 @@ const styles = StyleSheet.create({
     fontSize:30, 
     fontWeight:'bold', 
     color:'#fff',
-    textAlign:'center'
+    textAlign:'center',
   },
   button: {
     margin: width/20,
@@ -88,6 +98,6 @@ const styles = StyleSheet.create({
     borderRadius:15,
     justifyContent:'center',
     backgroundColor:'#fff',
-    zIndex:1
+    zIndex:1,
   }
 })

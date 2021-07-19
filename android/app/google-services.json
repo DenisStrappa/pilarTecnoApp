@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "465636528672",
+    "project_id": "sac-mendoza",
+    "storage_bucket": "sac-mendoza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465636528672:android:90e2aaa84a264ae828a245",
+        "android_client_info": {
+          "package_name": "com.rlink.sac_mendoza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465636528672-rplo503kq1nemitvuvlmea94d5qt99o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCguHLuCyJEzategRt61YU7adE1LpGPwNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465636528672-rplo503kq1nemitvuvlmea94d5qt99o6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "465636528672-p10ld0utpeaes3bhundbvag45r4o3o1a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.r-link.sac-mendoza"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
