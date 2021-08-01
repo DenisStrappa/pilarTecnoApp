@@ -1,4 +1,4 @@
-package com.pilartectoapp;
+package com.giulianoortego.pilartecnoapp;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "pilarTectoApp";
+    return "pilarTecnoApp";
   }
 }
